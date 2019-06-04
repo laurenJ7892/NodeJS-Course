@@ -4,6 +4,8 @@ const express = require('express')
 const hbs = require('hbs')
 
 const app = express()
+// Heroku or local port
+const port = process.env.PORT || 3000;
 
 // API functions
 const geoCode = require('./Utils/geocode.js');
@@ -98,6 +100,6 @@ app.get('*', (req, res) => {
 })
 
 
-app.listen(3000, () => {
-    console.log('Server is up on port 3000')
+app.listen(port, () => {
+    console.log('Server is up on port '+ port)
 })
