@@ -3,8 +3,9 @@
     "version": "1.0.0",
     "main": "app.js",
     "scripts": {
-        "start":"node src/app.js"
-     },
+        "start": "node src/app.js",
+        "dev": "nodemon src/app.js -e js,hbs"
+    },
     "author": "",
     "license": "ISC",
     "keywords": [],
@@ -14,5 +15,8 @@
         "hbs": "^4.0.1",
         "path": "^0.12.7",
         "request": "^2.88.0"
+    },
+    "devDependencies": {
+        "nodemon": "^1.2.0"
     }
 }
